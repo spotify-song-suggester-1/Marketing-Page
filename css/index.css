@@ -1,0 +1,372 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-image: url(../img/man-singing3.png);
+}
+@media screen and (min-width: 1441px) {
+  body {
+    background-image: url(../img/man-singing.png);
+  }
+}
+html,
+body {
+  font-family: 'Poppins';
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Poppins';
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.8rem;
+}
+h3 {
+  font-size: 2.6rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+/*.container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;  
+  }*/
+.login-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+  width: 100vw;
+  background-color: rgba(56, 56, 56, 0.73);
+}
+.login-cont .discover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-cont .discover h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins';
+  font-size: 7.2rem;
+  font-weight: bolder;
+  color: #00C7C7;
+  width: 324px;
+  height: 108px;
+}
+@media (max-width: 767px) {
+  .login-cont .discover h2 {
+    font-size: 5.6rem;
+  }
+}
+.login-cont .discover h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins';
+  font-size: 3.6rem;
+  font-weight: bolder;
+  color: #FFFFFF;
+  width: 203px;
+  height: 54px;
+  margin: 0px 0px 112px;
+}
+@media (max-width: 767px) {
+  .login-cont .discover h3 {
+    font-size: 2.8rem;
+    margin: 0px 0px 56px;
+  }
+}
+.login-cont .signup-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-cont .signup-buttons button {
+  width: 382px;
+  height: 44px;
+  border-radius: 20px;
+}
+@media (max-width: 767px) {
+  .login-cont .signup-buttons button {
+    width: 300px;
+    height: 32px;
+  }
+}
+.login-cont .signup-buttons button:focus {
+  outline: none;
+}
+.login-cont .signup-buttons #sign-up {
+  font-family: 'Poppins';
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: #00C7C7;
+  color: #FFFFFF;
+  margin: 0px 0px 19px;
+}
+@media (max-width: 767px) {
+  .login-cont .signup-buttons #sign-up {
+    font-size: 1.2rem;
+  }
+}
+.login-cont .signup-buttons #fb-sign-in {
+  font-family: 'Poppins';
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-image: url(../img/facebook-logo.png);
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-position: 55px;
+  background-color: transparent;
+  color: #FFFFFF;
+  margin: 0px 0px 19px;
+}
+@media (max-width: 767px) {
+  .login-cont .signup-buttons #fb-sign-in {
+    font-size: 1.2rem;
+    background-size: 8px;
+  }
+}
+.login-cont .signup-buttons a {
+  font-family: 'Poppins';
+  font-size: 1.6rem;
+  font-size: bold;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+@media (max-width: 767px) {
+  .login-cont .signup-buttons a {
+    font-size: 1.2rem;
+  }
+}
+.login-cont .signup-buttons a:hover {
+  color: rgba(140, 140, 140, 0.73);
+}
+.login-cont .signup-buttons a:active {
+  color: #FFFFFF;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  background-color: rgba(28, 28, 28, 0.73);
+  height: 15vh;
+}
+@media (max-width: 767px) {
+  .main-nav {
+    width: 100vw;
+  }
+}
+@media (max-width: 479px) {
+  .main-nav {
+    width: 100vw;
+  }
+}
+.main-nav .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  width: 43vw;
+}
+.main-nav .title img {
+  height: 8vh;
+  margin: 0px 16px 0px;
+}
+.main-nav .title h1 {
+  font-size: 3.2rem;
+  font-weight: bolder;
+}
+@media (max-width: 767px) {
+  .main-nav .title h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 479px) {
+  .main-nav .title h1 {
+    font-size: 1rem;
+  }
+}
+.main-nav .title h1 a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.main-nav .title h1 a:hover {
+  color: rgba(140, 140, 140, 0.73);
+}
+.main-nav .title h1 a:active {
+  color: #FFFFFF;
+}
+.main-nav .links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  width: 57vw;
+}
+.main-nav .links a {
+  display: flex;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 3.2rem;
+  font-weight: bolder;
+}
+@media (max-width: 767px) {
+  .main-nav .links a {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 479px) {
+  .main-nav .links a {
+    font-size: 1rem;
+  }
+}
+.main-nav .links a:hover {
+  color: rgba(140, 140, 140, 0.73);
+}
+.main-nav .links a:active {
+  color: #FFFFFF;
+}
