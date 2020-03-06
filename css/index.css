@@ -164,33 +164,44 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
-/*.container {
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto;  
-  }*/
+.display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.font-bold {
+  font-family: [object Object];
+  font-weight: bold;
+}
+.font-bolder {
+  font-family: [object Object];
+  font-weight: bolder;
+}
+.font-family {
+  font-family: 'Poppins';
+}
 .login-cont {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   height: 85vh;
   width: 100vw;
   background-color: rgba(56, 56, 56, 0.73);
 }
 .login-cont .discover {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .login-cont .discover h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Poppins';
-  font-size: 7.2rem;
+  font-family: [object Object];
   font-weight: bolder;
+  font-size: 7.2rem;
   color: #00C7C7;
   width: 324px;
   height: 108px;
@@ -204,9 +215,9 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Poppins';
-  font-size: 3.6rem;
+  font-family: [object Object];
   font-weight: bolder;
+  font-size: 3.6rem;
   color: #FFFFFF;
   width: 203px;
   height: 54px;
@@ -238,9 +249,9 @@ p {
   outline: none;
 }
 .login-cont .signup-buttons #sign-up {
-  font-family: 'Poppins';
-  font-size: 1.6rem;
+  font-family: [object Object];
   font-weight: bold;
+  font-size: 1.6rem;
   background-color: #00C7C7;
   color: #FFFFFF;
   margin: 0px 0px 19px;
@@ -251,9 +262,9 @@ p {
   }
 }
 .login-cont .signup-buttons #fb-sign-in {
-  font-family: 'Poppins';
-  font-size: 1.6rem;
+  font-family: [object Object];
   font-weight: bold;
+  font-size: 1.6rem;
   background-image: url(../img/facebook-logo.png);
   background-repeat: no-repeat;
   background-size: 12px;
@@ -269,9 +280,9 @@ p {
   }
 }
 .login-cont .signup-buttons a {
-  font-family: 'Poppins';
+  font-family: [object Object];
+  font-weight: bold;
   font-size: 1.6rem;
-  font-size: bold;
   text-decoration: none;
   color: #FFFFFF;
 }
@@ -288,8 +299,8 @@ p {
 }
 .main-nav {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   justify-content: space-between;
   background-color: rgba(28, 28, 28, 0.73);
   height: 15vh;
@@ -306,8 +317,8 @@ p {
 }
 .main-nav .title {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   color: #FFFFFF;
   width: 43vw;
 }
@@ -317,7 +328,7 @@ p {
 }
 .main-nav .title h1 {
   font-size: 3.2rem;
-  font-weight: bolder;
+  font-weight: bold;
 }
 @media (max-width: 767px) {
   .main-nav .title h1 {
@@ -341,9 +352,9 @@ p {
 }
 .main-nav .links {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: row;
   justify-content: space-evenly;
   width: 57vw;
 }

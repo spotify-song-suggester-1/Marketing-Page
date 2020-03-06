@@ -1,7 +1,5 @@
 .main-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .display();
     justify-content: space-between;
     background-color: rgba(28, 28, 28, 0.73);
     height: 15vh;
@@ -15,9 +13,7 @@
     }
 
     .title {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        .display();
         color: @main-text-color;
         width: 43vw;
 
@@ -28,7 +24,7 @@
 
         h1 {
             font-size: 3.2rem;
-            font-weight: bolder;
+            font-weight: @font-bold;
 
             @media (max-width: 767px) {
                 font-size: 2.0rem;
@@ -54,10 +50,8 @@
     }
 
     .links {
-        display: flex;
+        .display();
         flex-direction: row;
-        align-items: center;
-        justify-content: center;
         justify-content: space-evenly;
         width: 57vw;
         
@@ -66,7 +60,7 @@
             text-decoration: none;
             color: @main-text-color;
             font-size: 3.2rem;
-            font-weight: bolder;
+            font-weight: @font-bolder;
 
             @media (max-width: 767px) {
                 font-size: 2.0rem;
