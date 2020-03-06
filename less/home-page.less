@@ -1,26 +1,19 @@
 .login-cont {
-    display: flex;
+    .display();
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 85vh;
     width: 100vw;
     background-color: rgba(56, 56, 56, 0.73);
 
     .discover {
-        display: flex;
+        .display();
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
 
         h2 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: 'Poppins', ;
+            .display();
+            .font-bolder();
             font-size: 7.2rem;
-            font-weight: bolder;
-            color: #00C7C7;
+            color: @secondary-color;
             width: 324px;
             height: 108px;
 
@@ -30,12 +23,9 @@
         }
     
         h3 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: 'Poppins', ;
+            .display();
+            .font-bolder();
             font-size: 3.6rem;
-            font-weight: bolder;
             color: @main-text-color;
             width: 203px;
             height: 54px;
@@ -69,10 +59,9 @@
         }
 
         #sign-up {
-            font-family: 'Poppins', ;
+            .font-bold();
             font-size: 1.6rem;
-            font-weight: bold;
-            background-color: #00C7C7;
+            background-color: @secondary-color;
             color: @main-text-color;
             margin: 0px 0px 19px;
 
@@ -82,9 +71,8 @@
         }
 
         #fb-sign-in {
-            font-family: 'Poppins', ;
+            .font-bold();
             font-size: 1.6rem;
-            font-weight: bold;
             background-image: url(../img/facebook-logo.png);
             background-repeat: no-repeat;
             background-size: 12px;
@@ -100,9 +88,8 @@
         }
 
         a {
-            font-family: 'Poppins', ;
+            .font-bold();
             font-size: 1.6rem;
-            font-size: bold;
             text-decoration: none;
             color: @main-text-color;
 
